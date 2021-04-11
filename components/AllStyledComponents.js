@@ -1,7 +1,9 @@
 import styled from "styled-components";
-import { Avatar, IconButton } from "@material-ui/core";
+import { Avatar, Button, IconButton } from "@material-ui/core";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  width: 25%;
+`;
 
 export const Header = styled.div`
   display: flex;
@@ -36,4 +38,13 @@ export const SearchInput = styled.input`
   outline-width: 0;
   border: none;
   flex: 1;
+`;
+
+export const SidebarButton = styled(Button)`
+  width: 100%;
+
+  &&& {
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+  }
 `;
